@@ -1,0 +1,367 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+list-style-type: none;
+text-decoration: none;
+
+}
+ 
+
+h1,h2,h3,h4,h5,h6{  
+    font-family: 'Raleway', sans-serif;  
+}
+
+p,a{
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Menu list in mobile Mode and display list of menu after hit jquery  -start */
+.active{
+    width: 50% !important;
+    z-index: 20 !important;
+}
+
+.menu-hide{
+    display: inline-block !important;
+    font-size: 15px;
+}
+/* Menu list in mobile Mode and display list of menu after hit jquery  -end */
+
+/* own class start */
+
+img-responsive{
+display: block;
+max-width: 100%;
+height: auto;
+}
+
+.container{
+    max-width: 1330px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.clear{
+    clear: both;
+}
+/* own class end */
+
+/* side bar */
+section#sidebar {
+     width: 20%;    /*   width of side bar */
+    background-image:linear-gradient(rgba(155,60,183,0.9),rgba(255,57,111,0.9)), url('register.png'); /*  hide url image with color on top */
+    position: fixed;     /*   side bar position is fixed */
+    top: 0;              /*  box top margin 0 */
+    left: 0;     /*  box left margin 0 */
+    color: white;    /*  text color white */
+    height: 100%;      /*  height of box size is 100% */ 
+    transition: all 1s ease;    
+    z-index: 99;
+}
+
+#sidebar-brand {      
+    padding: 50px 40px;   /*  padding to websblog */     
+}
+
+.sidebar-menu li:hover {
+    background-color:rgba(0,0,0,0.5); 
+}
+
+.sidebar-menu li {
+transition: all 0.5s ease;   /* for good transition between menu list in hover part  */     
+}
+.sidebar-menu ul li a {     /*    */     
+    color: white;        /* white color to Menu list  */ 
+    display: block;
+    padding: 10px 40px;
+}
+
+.sidebar-menu ul li span {
+    margin-left: 10px;
+}
+
+
+
+
+/* main content */
+section#main-content {
+    width: 80%;
+    float: right;               /*  content of main-content should start from left of 80% */
+}
+
+/* Header contained 1- Dashboard  2-Search Bar    3- Websblog Admin  */
+header.main-header {
+    position: fixed;
+    background-color: white;
+    box-shadow: 10px 10px 20px #bbb;
+    width: 100%;
+}
+
+/* 1- Dashboard */
+.header-left {
+    float: left;
+    width: 32%;
+    padding: 20px;
+}
+
+
+/* Header => img */
+.header-left img {
+    width: 13%;
+    float: left;
+    padding-right: 10px;
+}
+
+/* Header => Admin word */
+.header-left p {
+    color: #bbb;
+}
+
+/* Header => Search Bar */
+input.search-bar {
+    width: 50%;
+    border-radius: 20px;
+    padding: 6px 9px;
+    border: 2px solid;
+    transition: width 1s ease;
+}
+
+/* Header => Search Bar */
+input.search-bar:focus {
+    outline: none;
+    border: 2px solid #fd5a5e;
+    width: 80%;
+}
+
+/* Header => Search Bar Icon */
+i.fa.fa-search {
+    background-color: #fd5a5e;
+    color: white;
+    width: 32.5px;
+    height: 32.5px;
+    line-height: 31px;
+    text-align: center;
+    border-top-right-radius: 50px 50px;
+    border-bottom-right-radius: 50px 50px;
+    margin-left: -35px;
+}
+
+/* creating Card */
+.card-box {
+    float: left;
+    width: 21%;
+    margin-top: 120px;
+    background: linear-gradient(45deg,#FF5252 0%,#f48fb1 100%);
+    margin-left: 2%;
+    margin-right: 2%;
+    padding: 25px;
+}
+
+
+/* icon on card */
+.cus-num {
+    position: relative;
+}
+
+/* icon on first card */
+.cus-h:after {
+    content: "\f0c0";
+    font-family: 'FONTAWESOME';
+    position: absolute;
+    right: 0;
+    color: white;
+}
+
+/* icon on Second card */
+.cus-pro:after {
+    content: "\f15b";
+    font-family: 'FONTAWESOME';
+    position: absolute;
+    right: 0;
+    color: white;
+}
+
+/* icon on Third card */
+.cus-ord:after {
+    content: "\f1c1";
+    font-family: 'FONTAWESOME';
+    position: absolute;
+    right: 0;
+    color: white;
+}
+/* icon on Fourth card */
+.cus-inc:after {
+    content: "\f0d6";
+    font-family: 'FONTAWESOME';
+    position: absolute;
+    right: 0;
+    color: white;
+}
+
+
+
+/* Table  */
+
+.content-pro-par {
+    margin: 10px;
+}
+
+.pro-table {
+    width: 65%;
+    float: left;
+    background-color: white;
+    box-shadow: 10px 10px 20px #bbb;
+}
+
+.cus-table {
+    float: right;
+    width: 30%;
+    background-color: white;
+    box-shadow: 10px 10px 20px #bbb;
+}
+
+table td {
+    padding: 20px 0px 0px 0px;
+}
+
+table th {
+    text-align: left;
+    padding-left: 1%;
+}
+
+.content-pro-par {
+    margin: 6% 2% 0% 2%;
+}
+
+
+span.rev-span {
+    background-color: #fd5a5e;
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    border-radius: 10px;
+    margin-right: 3px;
+}
+span.progress-span {
+    background-color: #7ba5d8;
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    border-radius: 10px;
+    margin-right: 3px;
+}
+span.pending-span {
+    background-color: #22262b;
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    border-radius: 10px;
+    margin-right: 3px;
+}
+
+.recent-btn {
+    float: right;
+    margin: 5px;
+}
+
+.rec-h {
+    float: left;
+}
+
+.recent-pro {
+    margin-bottom: 20px;
+}
+
+.recent-btn button {
+    background-color: #f97385;
+    border: none;
+    color: white;
+    border-radius: 20px;
+    width: 52px;
+    height: 25px;
+    line-height: 25px;
+    cursor: pointer;
+}
+
+
+/* second table */
+
+td.td-image img {
+    width: 26px;
+    border-radius: 25px;
+    height: 20px
+}
+
+
+td.td-cnt i {
+    padding: 4px;
+    color: #f48fb1;
+}
+
+
+
+
+/* Mobile Version  */
+
+@media screen and (max-width : 768px){
+    
+ 
+.card-box{
+    float: none;
+    width: 100%;
+    margin: 12px auto 0 auto;
+
+}
+
+.main-content-info.container {
+    margin-top: 130px;
+}
+
+.pro-table {
+    float: none;
+    width: 100%;
+    margin: 0 auto 10px 10px;
+}
+
+.cus-table {
+    float: none;
+    width: 100%;
+    margin: 0 auto 10px 10px;
+}
+
+table td {
+    font-size: 14px;
+}
+
+.rec-h h2 {
+    font-size: 18px;
+}
+
+.search-div{
+display: none;
+}
+
+.header-left {
+    float: left;
+    font-size: 14px;
+    width: 47%;
+}
+section#sidebar {
+    width: 20%;
+}
+section#main-content {
+    width: 80%;
+}
+
+.sidebar-menu ul li span {
+    display: none;
+}
+
+
+div#sidebar-brand span {
+    display: none;
+}
+
+}
